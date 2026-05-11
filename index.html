@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leonardo Penna de Lima - LeoOS</title>
+    <meta
+      name="description"
+      content="Site pessoal de Leonardo Penna de Lima em formato de desktop Macintosh clássico."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="boot" id="boot" aria-hidden="true">
+      <div class="boot-card">
+        <div class="happy-mac" aria-hidden="true">
+          <span></span>
+        </div>
+        <p>Starting LeoOS...</p>
+        <div class="boot-bar"><span></span></div>
+      </div>
+    </div>
+
+    <div class="desktop" id="desktop">
+      <header class="menu-bar" aria-label="Menu do LeoOS">
+        <button class="menu-logo" type="button" data-open="about">LeoOS</button>
+        <nav class="menu-nav" aria-label="Janelas">
+          <button type="button" data-open="about">File</button>
+          <button type="button" data-open="resume">Resume</button>
+          <button type="button" data-open="projects">Projects</button>
+          <button type="button" data-open="clippings">Clippings</button>
+          <button type="button" data-special="invert">Special</button>
+        </nav>
+        <div class="menu-status">
+          <button type="button" data-open="terminal" class="command-button">Command</button>
+          <button type="button" id="menu-clock" class="clock-button">--:--</button>
+        </div>
+      </header>
+
+      <main class="screen" aria-label="Desktop pessoal de Leonardo">
+        <section class="desktop-icons" aria-label="Icones do desktop">
+          <button class="desktop-icon" type="button" data-open="about">
+            <svg class="desktop-svg-icon" viewBox="0 0 44 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="40" height="36" rx="3" fill="var(--paper)" stroke="var(--black)" stroke-width="2.5"/>
+              <circle cx="22" cy="14" r="6" fill="var(--black)"/>
+              <path d="M4 38c0-9 8-13 18-13s18 4 18 13" fill="var(--black)"/>
+            </svg>
+            <span>About Leo</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="resume">
+            <svg class="desktop-svg-icon" viewBox="0 0 44 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 2h24l10 10v26H5z" fill="var(--paper)" stroke="var(--black)" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M29 2v10h10" fill="none" stroke="var(--black)" stroke-width="2" stroke-linejoin="round"/>
+              <rect x="10" y="18" width="22" height="3" fill="var(--black)"/>
+              <rect x="10" y="24" width="22" height="3" fill="var(--black)"/>
+              <rect x="10" y="30" width="13" height="3" fill="var(--black)"/>
+            </svg>
+            <span>Resume</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="projects">
+            <svg class="desktop-svg-icon" viewBox="0 0 44 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6h16l3 6h21v26H2z" fill="var(--paper)" stroke="var(--black)" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="8" y="25" width="28" height="3" fill="var(--teal)"/>
+            </svg>
+            <span>Projects</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="clippings">
+            <svg class="desktop-svg-icon" viewBox="0 0 44 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="40" height="36" fill="var(--paper)" stroke="var(--black)" stroke-width="2.5"/>
+              <rect x="6" y="6" width="32" height="5" fill="var(--black)"/>
+              <rect x="6" y="15" width="13" height="2.5" fill="var(--black)"/>
+              <rect x="6" y="21" width="13" height="2.5" fill="var(--black)"/>
+              <rect x="6" y="27" width="13" height="2.5" fill="var(--black)"/>
+              <rect x="6" y="33" width="9"  height="2.5" fill="var(--black)"/>
+              <rect x="23" y="15" width="13" height="2.5" fill="var(--black)"/>
+              <rect x="23" y="21" width="13" height="2.5" fill="var(--black)"/>
+              <rect x="23" y="27" width="13" height="2.5" fill="var(--black)"/>
+              <rect x="23" y="33" width="9"  height="2.5" fill="var(--black)"/>
+            </svg>
+            <span>Clippings</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="terminal">
+            <svg class="desktop-svg-icon" viewBox="0 0 44 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="40" height="36" rx="2" fill="var(--black)"/>
+              <polyline points="8,16 16,20 8,24" stroke="var(--white)" stroke-width="2.5" stroke-linejoin="miter" stroke-linecap="square"/>
+              <rect x="19" y="25" width="11" height="3" fill="var(--white)"/>
+            </svg>
+            <span>Terminal</span>
+          </button>
+          <button class="desktop-icon" type="button" data-open="easter">
+            <svg class="desktop-svg-icon" viewBox="0 0 44 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="40" height="36" rx="3" fill="var(--paper)" stroke="var(--black)" stroke-width="2.5"/>
+              <rect x="5" y="5" width="22" height="16" fill="var(--white)" stroke="var(--black)" stroke-width="1.5"/>
+              <rect x="31" y="5" width="8" height="8" fill="var(--black)"/>
+              <rect x="32" y="6" width="6" height="6" fill="var(--white)"/>
+              <rect x="13" y="24" width="18" height="13" fill="var(--black)"/>
+              <rect x="19" y="24" width="6"  height="13" fill="var(--gray-3)"/>
+            </svg>
+            <span>Hidden Disk</span>
+          </button>
+        </section>
+
+        <section
+          class="window active"
+          id="window-about"
+          data-window="about"
+          style="--x: 104px; --y: 58px; --w: 860px; --h: 650px"
+        >
+          <div class="title-bar">
+            <button class="window-close" type="button" data-close="about" aria-label="Fechar"></button>
+            <strong>About Leonardo</strong>
+            <button class="window-zoom" type="button" data-zoom="about" aria-label="Zoom"></button>
+          </div>
+          <div class="window-body about-layout">
+            <aside class="profile-disk">
+              <div class="avatar-wrap">
+                <img
+                  class="avatar"
+                  src="https://avatars.githubusercontent.com/u/20426510?v=4"
+                  alt="Foto de Leonardo Lima no GitHub"
+                />
+              </div>
+              <h1>Leonardo<br>Penna de Lima</h1>
+              <p class="profile-role">Senior PM · AI Products</p>
+              <div class="status-led"><span></span> Mercado Livre / São Paulo</div>
+              <dl class="profile-info">
+                <dt>Focus</dt>
+                <dd>IA Conversacional</dd>
+                <dt>Stack</dt>
+                <dd>LLM · RAG · Claude</dd>
+                <dt>Base</dt>
+                <dd>São Paulo, BR</dd>
+              </dl>
+              <div class="contact-row">
+                <a href="https://www.linkedin.com/in/leoplima/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/leop25" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </aside>
+
+            <article class="about-copy">
+              <p class="lead">
+                Product Manager que coda, prototipa com agentes e leva discussão técnica
+                para perto da estratégia. O fio condutor: produtos de IA que saem do demo,
+                medem qualidade e sobrevivem à produção.
+              </p>
+
+              <p class="section-label">Impact metrics</p>
+              <div class="metric-grid" aria-label="Métricas de impacto">
+                <div>
+                  <span>5M+</span>
+                  <p>de interações mensais no assistente conversacional</p>
+                  <footer class="metric-context">Mercado Livre · Assistente LLM</footer>
+                </div>
+                <div>
+                  <span>−75%</span>
+                  <p>no tempo de análise de qualidade com LLM-as-a-judge</p>
+                  <footer class="metric-context">Mercado Livre · Avaliação de IA</footer>
+                </div>
+                <div>
+                  <span>−55%</span>
+                  <p>no tempo médio de resolução com IA no atendimento</p>
+                  <footer class="metric-context">iFood · Assistente Atendimento</footer>
+                </div>
+                <div>
+                  <span>10×</span>
+                  <p>de crescimento no volume do motor de crédito</p>
+                  <footer class="metric-context">iFood · Motor de Crédito</footer>
+                </div>
+              </div>
+
+              <div class="capabilities" aria-label="Competências">
+                <div class="cap-group">
+                  <h3 class="cap-label">Technical</h3>
+                  <div class="cap-tags">
+                    <span>LLM evaluation</span>
+                    <span>Agentic workflows</span>
+                    <span>Responsible AI</span>
+                    <span>Claude Code</span>
+                    <span>RAG</span>
+                    <span>SQL</span>
+                  </div>
+                </div>
+                <div class="cap-group">
+                  <h3 class="cap-label">Product</h3>
+                  <div class="cap-tags">
+                    <span>Growth</span>
+                    <span>Funnels</span>
+                    <span>Discovery to launch</span>
+                    <span>Roadmapping</span>
+                    <span>Stakeholders</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="interests">
+                <h2>Personal files</h2>
+                <p>Programação, impressão 3D, fotografia, relógios e futebol.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="window"
+          id="window-resume"
+          data-window="resume"
+          hidden
+          style="--x: 240px; --y: 92px; --w: 880px; --h: 670px"
+        >
+          <div class="title-bar">
+            <button class="window-close" type="button" data-close="resume" aria-label="Fechar"></button>
+            <strong>Resume Folder</strong>
+            <button class="window-zoom" type="button" data-zoom="resume" aria-label="Zoom"></button>
+          </div>
+          <div class="window-body">
+            <div class="split-header">
+              <div>
+                <p class="eyebrow">Career path</p>
+                <h2>From AI experiments to production systems.</h2>
+              </div>
+              <a class="system-link" href="https://www.linkedin.com/in/leoplima/" target="_blank" rel="noreferrer">
+                Open LinkedIn
+              </a>
+            </div>
+
+            <ol class="timeline">
+              <li>
+                <time>Mar 2025 - Present</time>
+                <div>
+                  <h3>Mercado Livre - Senior Product Manager, AI & Post-Purchase</h3>
+                  <p>
+                    Liderou assistente conversacional com LLM (5M+ interações/mês); co-implementou
+                    avaliação LLM-as-a-judge, governança de IA responsável e workflows agênticos.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <time>Jan 2023 - Mar 2025</time>
+                <div>
+                  <h3>iFood - Senior Product Manager, AI, Onboarding & Credit</h3>
+                  <p>
+                    Construiu assistente de IA para atendimento, redesenhou onboarding e otimizou
+                    motor de crédito para crescimento de volume sem degradar qualidade.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <time>Apr 2022 - Sep 2022</time>
+                <div>
+                  <h3>Revelo - Product Manager</h3>
+                  <p>
+                    Reconstruiu plataforma de recrutamento internacional em inglês e conduziu
+                    discovery-to-launch com times técnicos e stakeholders.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <time>Jan 2019 - Apr 2022</time>
+                <div>
+                  <h3>Sinch / Wavy Global - Product Analyst Jr. / Product Assistant / Intern</h3>
+                  <p>
+                    Liderou squad de soluções de mensageria, templates reutilizáveis e fluxos
+                    de comunicação para clientes enterprise, incluindo saúde.
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="education-grid">
+              <section>
+                <h3>Education</h3>
+                <p>MBA em Gestão de Negócios - USP / Esalq, 2024-2026.</p>
+                <p>BSc em Sistemas de Informação - ESPM, 2020-2022.</p>
+                <p>BSc em Ciência da Computação - UFSCar, 2016-2019.</p>
+              </section>
+              <section>
+                <h3>Certifications & recognition</h3>
+                <p>Reforge Growth Series; Generative AI Products: From Idea to MVP.</p>
+                <p>PM3, Tera Digital Product Leadership, AI Fluency, Claude Code in Action.</p>
+                <p>Vice-campeão Hackatrouble na categoria Negócios.</p>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="window"
+          id="window-projects"
+          data-window="projects"
+          hidden
+          style="--x: 180px; --y: 126px; --w: 920px; --h: 650px"
+        >
+          <div class="title-bar">
+            <button class="window-close" type="button" data-close="projects" aria-label="Fechar"></button>
+            <strong>Projects</strong>
+            <button class="window-zoom" type="button" data-zoom="projects" aria-label="Zoom"></button>
+          </div>
+          <div class="window-body">
+            <div class="finder-toolbar">
+              <button type="button" data-filter="all" class="selected">All</button>
+              <button type="button" data-filter="ai">AI</button>
+              <button type="button" data-filter="product">Product</button>
+              <button type="button" data-filter="code">Code</button>
+            </div>
+            <div class="project-grid">
+              <article class="project-card" data-kind="ai code">
+                <span class="mini-icon">TS</span>
+                <h3>pessoal_website</h3>
+                <p>Website pessoal dark/minimalista em Next.js, Tailwind e TypeScript.</p>
+                <a href="https://github.com/leop25/pessoal_website" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="project-card" data-kind="ai code">
+                <span class="mini-icon">QL</span>
+                <h3>ai-platform-qlearning</h3>
+                <p>Experimento single-file com multi-agent Q-Learning em plataformas.</p>
+                <a href="https://github.com/leop25/ai-platform-qlearning" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="project-card" data-kind="ai product">
+                <span class="mini-icon">LM</span>
+                <h3>LookMate</h3>
+                <p>Concierge de moda com IA no Product Hunt, usando GPT-4 para sugestões de outfits.</p>
+                <a href="https://www.producthunt.com/products/lookmate?launch=lookmate" target="_blank" rel="noreferrer">
+                  Product Hunt
+                </a>
+              </article>
+              <article class="project-card" data-kind="product">
+                <span class="mini-icon">FD</span>
+                <h3>Fila Digital</h3>
+                <p>Sistema de filas virtuais premiado no Hackatrouble 2020 para reduzir aglomerações.</p>
+                <a
+                  href="https://saocarlosemrede.com.br/estudantes-da-ufscar-criam-app-para-acabar-com-filas-durante-a-pandemia/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Clipping
+                </a>
+              </article>
+              <article class="project-card" data-kind="ai code">
+                <span class="mini-icon">PY</span>
+                <h3>openai-telegram</h3>
+                <p>Bot em Python para gerar texto e imagens com OpenAI API via Telegram.</p>
+                <a href="https://github.com/leop25/openai-telegram" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="project-card" data-kind="code">
+                <span class="mini-icon">C++</span>
+                <h3>buydventures / akinimal</h3>
+                <p>Projetos de faculdade em C++ com listas, pilhas e árvores.</p>
+                <a href="https://github.com/leop25?tab=repositories" target="_blank" rel="noreferrer">Repos</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="window"
+          id="window-clippings"
+          data-window="clippings"
+          hidden
+          style="--x: 88px; --y: 132px; --w: 860px; --h: 650px"
+        >
+          <div class="title-bar">
+            <button class="window-close" type="button" data-close="clippings" aria-label="Fechar"></button>
+            <strong>Public Clippings</strong>
+            <button class="window-zoom" type="button" data-zoom="clippings" aria-label="Zoom"></button>
+          </div>
+          <div class="window-body clippings">
+            <article>
+              <time>2026</time>
+              <h3>GitHub profile</h3>
+              <p>Perfil público leop25 no GitHub: Product Manager no Mercado Livre, repositórios em TypeScript, HTML, Python e C++.</p>
+              <a href="https://github.com/leop25" target="_blank" rel="noreferrer">github.com/leop25</a>
+            </article>
+            <article>
+              <time>2023</time>
+              <h3>LookMate no Product Hunt</h3>
+              <p>App iOS de consultoria de moda com IA, lançado por Leonardo no Product Hunt.</p>
+              <a href="https://www.producthunt.com/products/lookmate?launch=lookmate" target="_blank" rel="noreferrer">
+                Product Hunt
+              </a>
+            </article>
+            <article>
+              <time>2022</time>
+              <h3>Artigos de Product Management</h3>
+              <p>Textos sobre stakeholders, mudança de escopo e colaboração entre PMs e devs.</p>
+              <a
+                href="https://pt.linkedin.com/pulse/mudan%C3%A7a-de-escopo-maldi%C3%A7%C3%A3o-todo-gerente-produto-como-penna-de-lima"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn Pulse
+              </a>
+            </article>
+            <article>
+              <time>2020</time>
+              <h3>Hackatrouble / Fila Digital</h3>
+              <p>Equipe Research ficou em segundo lugar na categoria Negócios com uma fila virtual para a pandemia.</p>
+              <a
+                href="https://saocarlosemrede.com.br/estudantes-da-ufscar-criam-app-para-acabar-com-filas-durante-a-pandemia/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                São Carlos em Rede
+              </a>
+            </article>
+            <article>
+              <time>2018</time>
+              <h3>User Experience - Mais do que um app bonito</h3>
+              <p>Artigo publicado pela CATI Jr., assinado por Leonardo Penna de Lima.</p>
+              <a href="https://medium.com/%40catijr/user-experience-mais-do-que-um-app-bonito-46cdd3047ffe" target="_blank" rel="noreferrer">
+                Medium
+              </a>
+            </article>
+            <article>
+              <time>Archive</time>
+              <h3>about.me</h3>
+              <p>Registro antigo como estudante e conversation designer em Santana de Parnaíba, com Wavy Global, UFSCar e ESPM.</p>
+              <a href="https://about.me/leoplima" target="_blank" rel="noreferrer">about.me/leoplima</a>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="window terminal-window"
+          id="window-terminal"
+          data-window="terminal"
+          hidden
+          style="--x: 330px; --y: 170px; --w: 780px; --h: 530px"
+        >
+          <div class="title-bar">
+            <button class="window-close" type="button" data-close="terminal" aria-label="Fechar"></button>
+            <strong>Terminal</strong>
+            <button class="window-zoom" type="button" data-zoom="terminal" aria-label="Zoom"></button>
+          </div>
+          <div class="terminal-body">
+            <div id="terminal-output" class="terminal-output" aria-live="polite">
+              <p>LeoOS shell v1.0</p>
+              <p>Type `help` for indexed commands.</p>
+            </div>
+            <form id="terminal-form" class="terminal-input">
+              <label for="terminal-command">leo@pm-mac:~$</label>
+              <input id="terminal-command" autocomplete="off" spellcheck="false" />
+            </form>
+          </div>
+        </section>
+
+        <section
+          class="window"
+          id="window-easter"
+          data-window="easter"
+          hidden
+          style="--x: 430px; --y: 86px; --w: 580px; --h: 430px"
+        >
+          <div class="title-bar">
+            <button class="window-close" type="button" data-close="easter" aria-label="Fechar"></button>
+            <strong>Hidden Disk</strong>
+            <button class="window-zoom" type="button" data-zoom="easter" aria-label="Zoom"></button>
+          </div>
+          <div class="window-body hidden-disk">
+            <div class="disk-label">
+              <span>LEO-1984</span>
+            </div>
+            <h2>Unindexed blocks found</h2>
+            <p>
+              Alguns arquivos respondem a comandos antigos, outros à obsessão por produto,
+              relógios e agentes. O Finder não mostra tudo.
+            </p>
+            <ul id="egg-list">
+              <li>Disk mounted: Hidden Disk</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
