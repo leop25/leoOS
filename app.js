@@ -1112,7 +1112,7 @@ function runCommand(raw) {
     return;
   }
 
-  if (input === "claude" || input === "agent" || input === "agentic") {
+  if (input === "claude" || input === "codex" || input === "agent" || input === "agentic") {
     desktop.classList.add("is-agent-mode");
     writeTerminal(responses.agent);
     return;
@@ -1195,11 +1195,11 @@ function trackKonami(key) {
 }
 
 function checkTypedEggs() {
-  const eggs = ["claude", "leop25", "lookmate", "fila", "watch"];
+  const eggs = ["claude", "codex", "leop25", "lookmate", "fila", "watch"];
 
   eggs.forEach((needle) => {
     if (typedBuffer.endsWith(needle)) {
-      if (needle === "claude") desktop.classList.add("is-agent-mode");
+      if (needle === "claude" || needle === "codex") desktop.classList.add("is-agent-mode");
       if (needle === "watch") desktop.classList.add("is-watch-mode");
       typedBuffer = "";
     }

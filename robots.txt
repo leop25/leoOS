@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doleo.com.br/sitemap.xml

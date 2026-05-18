@@ -1,2 +1,12 @@
 .claude/
+.vercel/
+.DS_Store
+.env
+.env.*
 node_modules/
+
+# Local QA screenshots
+leoos-*-check.png
+leoos-mobile-cdp.png
+leoos-readable-*.png
+leoos-sysfont-*.png
