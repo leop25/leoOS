@@ -34,10 +34,10 @@ Three files, no modules:
 - **Special menu** → `.is-inverted` on `#desktop`
 - **Terminal `claude`/`agent`/`agentic`** → `.is-agent-mode`
 - **Terminal `doleo`** → passphrase acknowledgement
-- **Typed keywords** (outside terminal): `claude`, `leop25`, `lookmate`, `fila`, `watch` — each unlocks an entry in the Hidden Disk window
+- **Typed keywords** (outside terminal): `claude`, `leop25`, `lookmate`, `fila`, `watch` — each toggles a visual effect and shows a toast notification
 
 ## Conventions
 
-- Window IDs (`about`, `resume`, `projects`, `clippings`, `terminal`, `easter`) must match between `data-window` in HTML and any JS calls to `openWindow`/`windows.get`.
+- Window IDs (`about`, `resume`, `projects`, `clippings`, `terminal`) must match between `data-window` in HTML and any JS calls to `openWindow`/`windows.get`.
 - Pixel icons are pure CSS in `styles.css` — search for `.icon-` to find them.
 - All copy is in Portuguese (pt-BR); UI labels and terminal responses follow that pattern.
