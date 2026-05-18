@@ -1,0 +1,17 @@
+{
+  "name": "leoos",
+  "version": "1.0.0",
+  "description": "Static personal site that emulates a classic Macintosh desktop",
+  "scripts": {
+    "dev": "python3 -m http.server 4173"
+  },
+  "keywords": [
+    "personal-site",
+    "portfolio"
+  ],
+  "author": "Leonardo Penna de Lima",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
