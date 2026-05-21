@@ -166,6 +166,7 @@ const i18n = {
       hackatrouble: "Hackatrouble 2020: Fila Digital, segundo lugar na categoria Negócios, criado para filas virtuais durante a pandemia.",
       lookmate: "LookMate: lançamento no Product Hunt de um concierge de moda com IA usando recomendações de outfits via GPT-4.",
       sudo: "Boa tentativa. Autoridade de produto exige alinhamento com stakeholders.",
+      7773: "Gravidade ativada. Componentes desacoplados do desktop.",
       opened: (target) => `Abriu ${target}.`,
       notFound: "Janela não encontrada. Tente about, resume, projects, clippings ou terminal.",
       commandNotFound: (raw) => `Comando não encontrado: ${raw}`,
@@ -325,6 +326,7 @@ const i18n = {
       hackatrouble: "Hackatrouble 2020: Fila Digital, second place in the Business category, built for virtual queues during the pandemic.",
       lookmate: "LookMate: Product Hunt launch of an AI fashion concierge using GPT-4 outfit recommendations.",
       sudo: "Good try. Product authority requires stakeholder alignment.",
+      7773: "Gravity enabled. Components detached from the desktop.",
       opened: (target) => `Opened ${target}.`,
       notFound: "Window not found. Try about, resume, projects, clippings, or terminal.",
       commandNotFound: (raw) => `Command not found: ${raw}`,
@@ -484,6 +486,7 @@ const i18n = {
       hackatrouble: "Hackatrouble 2020: Fila Digital, segundo lugar en la categoría Negocios, creado para filas virtuales durante la pandemia.",
       lookmate: "LookMate: lanzamiento en Product Hunt de un concierge de moda con IA usando recomendaciones de outfits vía GPT-4.",
       sudo: "Buen intento. La autoridad de producto requiere alineación con stakeholders.",
+      7773: "Gravedad activada. Componentes desacoplados del escritorio.",
       opened: (target) => `Abrió ${target}.`,
       notFound: "Ventana no encontrada. Prueba about, resume, projects, clippings o terminal.",
       commandNotFound: (raw) => `Comando no encontrado: ${raw}`,
@@ -1122,6 +1125,14 @@ function runCommand(raw) {
 
   if (input === "doleo") {
     writeTerminal(responses.doleo);
+    return;
+  }
+
+  if (command === "7773") {
+    desktop.classList.remove("is-gravity-mode");
+    void desktop.offsetWidth;
+    desktop.classList.add("is-gravity-mode");
+    writeTerminal(responses[command]);
     return;
   }
 

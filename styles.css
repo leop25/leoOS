@@ -1099,6 +1099,89 @@ p {
   white-space: nowrap;
 }
 
+.desktop.is-gravity-mode .menu-bar,
+.desktop.is-gravity-mode .screen > .mobile-home,
+.desktop.is-gravity-mode .screen > .desktop-icons,
+.desktop.is-gravity-mode .screen > .window,
+.desktop.is-gravity-mode .screen > .dock,
+.desktop.is-gravity-mode .screen > .home-indicator,
+.desktop.is-gravity-mode .screen > .toast {
+  --gravity-start: translate3d(0, 0, 0) rotate(0deg);
+  --gravity-end: translate3d(0, calc(100vh + 260px), 0) rotate(4deg);
+  animation: gravityFall 1.65s cubic-bezier(0.62, 0.02, 0.92, 0.36) forwards;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.desktop.is-gravity-mode .menu-bar {
+  --gravity-end: translate3d(0, calc(100vh + 260px), 0) rotate(-2deg);
+}
+
+.desktop.is-gravity-mode .screen > .desktop-icons {
+  --gravity-end: translate3d(-18px, calc(100vh + 260px), 0) rotate(-10deg);
+  animation-delay: 0.05s;
+}
+
+.desktop.is-gravity-mode .screen > .window[data-window="about"] {
+  --gravity-end: translate3d(16px, calc(100vh + 260px), 0) rotate(7deg);
+  animation-delay: 0.1s;
+}
+
+.desktop.is-gravity-mode .screen > .window[data-window="resume"] {
+  --gravity-end: translate3d(-28px, calc(100vh + 260px), 0) rotate(-5deg);
+  animation-delay: 0.16s;
+}
+
+.desktop.is-gravity-mode .screen > .window[data-window="projects"] {
+  --gravity-end: translate3d(30px, calc(100vh + 260px), 0) rotate(9deg);
+  animation-delay: 0.22s;
+}
+
+.desktop.is-gravity-mode .screen > .window[data-window="clippings"] {
+  --gravity-end: translate3d(-12px, calc(100vh + 260px), 0) rotate(-8deg);
+  animation-delay: 0.28s;
+}
+
+.desktop.is-gravity-mode .screen > .window[data-window="terminal"] {
+  --gravity-end: translate3d(20px, calc(100vh + 260px), 0) rotate(5deg);
+  animation-delay: 0.34s;
+}
+
+.desktop.is-gravity-mode .screen > .mobile-home {
+  --gravity-end: translate3d(0, calc(100vh + 260px), 0) rotate(-4deg);
+  animation-delay: 0.08s;
+}
+
+.desktop.is-gravity-mode .screen > .dock {
+  animation-delay: 0.18s;
+}
+
+.desktop.is-gravity-mode .screen > .home-indicator {
+  --gravity-start: translateX(-50%) translate3d(0, 0, 0) rotate(0deg);
+  --gravity-end: translateX(-50%) translate3d(0, calc(100vh + 260px), 0) rotate(2deg);
+  animation-delay: 0.22s;
+}
+
+.desktop.is-gravity-mode .screen > .toast {
+  animation-delay: 0.4s;
+}
+
+@keyframes gravityFall {
+  0% {
+    opacity: 1;
+    transform: var(--gravity-start);
+  }
+
+  18% {
+    transform: var(--gravity-start) translateY(-8px);
+  }
+
+  100% {
+    opacity: 0.98;
+    transform: var(--gravity-end);
+  }
+}
+
 body.konami {
   filter: contrast(1.55) saturate(0.35) brightness(0.92);
 }
