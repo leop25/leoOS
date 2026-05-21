@@ -127,13 +127,14 @@ const i18n = {
       title: "Projetos",
       filters: ["Todos", "IA", "Produto", "Código"],
       descriptions: [
-        "Website pessoal dark/minimalista em Next.js, Tailwind e TypeScript.",
-        "Experimento single-file com multi-agent Q-Learning em plataformas.",
-        "Concierge de moda com IA no Product Hunt, usando GPT-4 para sugestões de outfits.",
-        "Sistema de filas virtuais premiado no Hackatrouble 2020 para reduzir aglomerações.",
+        "Portfolio em formato de desktop Macintosh clássico, feito com HTML, CSS e JavaScript vanilla.",
+        "App nativo de menu bar para macOS com captura de tela, auto-save e anotações leves.",
+        "Extensão Safari/WebExtension que remove YouTube Shorts para deixar o YouTube mais focado.",
+        "Experimento single-file com multi-agent Q-Learning, agentes compartilhando uma Q-table.",
         "Bot em Python para gerar texto e imagens com OpenAI API via Telegram.",
-        "Projetos de faculdade em C++ com listas, pilhas e árvores.",
+        "Concierge de moda com IA lançado no Product Hunt, usando GPT-4 para sugestões de outfits.",
       ],
+      links: ["GitHub", "GitHub", "GitHub", "GitHub", "GitHub", "Product Hunt"],
       clipping: "Recorte",
       repos: "Repositórios",
     },
@@ -158,7 +159,7 @@ const i18n = {
       help: "Comandos: whoami, resume, projects, sources, interests, contact, hackatrouble, lookmate, open <janela>, clear, sudo.",
       whoami: "Leonardo Penna de Lima - Senior Product Manager focado em produtos de IA, aplicações com LLM, agentes, avaliação de IA e estratégia.",
       resume: "Mercado Livre, iFood, Revelo, Sinch/Wavy. Formação: MBA USP/Esalq, Sistemas de Informação na ESPM, Ciência da Computação na UFSCar.",
-      projects: "pessoal_website, ai-platform-qlearning, LookMate, Fila Digital, openai-telegram e projetos universitários em C++.",
+      projects: "leoOS, Cappy, no_shorts, ai-platform-qlearning, openai-telegram e LookMate.",
       sources: "Fontes: LinkedIn, GitHub, Product Hunt, São Carlos em Rede, Medium, about.me e materiais locais.",
       interests: "Arquivos pessoais: programação, impressão 3D, fotografia, relógios e futebol.",
       contact: "Contato público: LinkedIn /in/leoplima e GitHub @leop25.",
@@ -285,13 +286,14 @@ const i18n = {
       title: "Projects",
       filters: ["All", "AI", "Product", "Code"],
       descriptions: [
-        "Dark minimalist personal website built with Next.js, Tailwind, and TypeScript.",
-        "Single-file experiment with multi-agent Q-Learning on platforms.",
-        "AI fashion concierge launched on Product Hunt, using GPT-4 for outfit suggestions.",
-        "Virtual queue system awarded at Hackatrouble 2020 to reduce crowds.",
+        "Classic Macintosh desktop portfolio built with vanilla HTML, CSS, and JavaScript.",
+        "Native macOS menu bar app with screenshot capture, auto-save, and lightweight annotations.",
+        "Safari/WebExtension that removes YouTube Shorts to make YouTube more focused.",
+        "Single-file multi-agent Q-Learning experiment with agents sharing one Q-table.",
         "Python bot for generating text and images with the OpenAI API through Telegram.",
-        "College projects in C++ with lists, stacks, and trees.",
+        "AI fashion concierge launched on Product Hunt, using GPT-4 for outfit suggestions.",
       ],
+      links: ["GitHub", "GitHub", "GitHub", "GitHub", "GitHub", "Product Hunt"],
       clipping: "Clipping",
       repos: "Repos",
     },
@@ -316,7 +318,7 @@ const i18n = {
       help: "Commands: whoami, resume, projects, sources, interests, contact, hackatrouble, lookmate, open <window>, clear, sudo.",
       whoami: "Leonardo Penna de Lima - Senior Product Manager focused on AI products, LLM applications, agents, AI evaluation, and strategy.",
       resume: "Mercado Livre, iFood, Revelo, Sinch/Wavy. Education: MBA USP/Esalq, Information Systems at ESPM, Computer Science at UFSCar.",
-      projects: "pessoal_website, ai-platform-qlearning, LookMate, Fila Digital, openai-telegram, and college projects in C++.",
+      projects: "leoOS, Cappy, no_shorts, ai-platform-qlearning, openai-telegram, and LookMate.",
       sources: "Sources: LinkedIn, GitHub, Product Hunt, São Carlos em Rede, Medium, about.me, and local materials.",
       interests: "Personal files: programming, 3D printing, photography, watches, and football.",
       contact: "Public contact: LinkedIn /in/leoplima and GitHub @leop25.",
@@ -443,13 +445,14 @@ const i18n = {
       title: "Proyectos",
       filters: ["Todos", "IA", "Producto", "Código"],
       descriptions: [
-        "Website personal dark/minimalista en Next.js, Tailwind y TypeScript.",
-        "Experimento single-file con multi-agent Q-Learning en plataformas.",
-        "Concierge de moda con IA en Product Hunt, usando GPT-4 para sugerencias de outfits.",
-        "Sistema de filas virtuales premiado en Hackatrouble 2020 para reducir aglomeraciones.",
+        "Portfolio con formato de desktop Macintosh clásico, hecho con HTML, CSS y JavaScript vanilla.",
+        "App nativa de menu bar para macOS con captura de pantalla, auto-save y anotaciones ligeras.",
+        "Extensión Safari/WebExtension que elimina YouTube Shorts para dejar YouTube más enfocado.",
+        "Experimento single-file con multi-agent Q-Learning, agentes compartiendo una Q-table.",
         "Bot en Python para generar texto e imágenes con OpenAI API vía Telegram.",
-        "Proyectos universitarios en C++ con listas, pilas y árboles.",
+        "Concierge de moda con IA lanzado en Product Hunt, usando GPT-4 para sugerencias de outfits.",
       ],
+      links: ["GitHub", "GitHub", "GitHub", "GitHub", "GitHub", "Product Hunt"],
       clipping: "Recorte",
       repos: "Repositorios",
     },
@@ -474,7 +477,7 @@ const i18n = {
       help: "Comandos: whoami, resume, projects, sources, interests, contact, hackatrouble, lookmate, open <ventana>, clear, sudo.",
       whoami: "Leonardo Penna de Lima - Senior Product Manager enfocado en productos de IA, aplicaciones con LLM, agentes, evaluación de IA y estrategia.",
       resume: "Mercado Livre, iFood, Revelo, Sinch/Wavy. Formación: MBA USP/Esalq, Sistemas de Información en ESPM, Ciencia de la Computación en UFSCar.",
-      projects: "pessoal_website, ai-platform-qlearning, LookMate, Fila Digital, openai-telegram y proyectos universitarios en C++.",
+      projects: "leoOS, Cappy, no_shorts, ai-platform-qlearning, openai-telegram y LookMate.",
       sources: "Fuentes: LinkedIn, GitHub, Product Hunt, São Carlos em Rede, Medium, about.me y materiales locales.",
       interests: "Archivos personales: programación, impresión 3D, fotografía, relojes y fútbol.",
       contact: "Contacto público: LinkedIn /in/leoplima y GitHub @leop25.",
@@ -729,8 +732,7 @@ function applyLanguage(language) {
   setText("#window-projects .title-bar strong", copy.projects.title);
   setTextList(".finder-toolbar button", copy.projects.filters);
   setTextList(".project-card p", copy.projects.descriptions);
-  setText(".project-card[data-kind='product'] a", copy.projects.clipping);
-  setText(".project-card[data-kind='code'] a", copy.projects.repos);
+  setTextList(".project-card a", copy.projects.links);
 
   setText("#window-clippings .title-bar strong", copy.clippings.title);
   setText("#window-clippings article:last-child time", copy.clippings.archive);
