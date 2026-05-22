@@ -207,7 +207,7 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
-.language-card h1 {
+.language-card h2 {
   margin: 0;
   font-size: 30px;
   line-height: 1;
@@ -1061,6 +1061,62 @@ p {
   display: none;
 }
 
+.info-panel {
+  position: absolute;
+  top: 54px;
+  right: 14px;
+  z-index: 2;
+  width: 280px;
+  max-height: calc(100vh - 96px);
+  overflow: auto;
+  border: 3px solid var(--black);
+  background: rgba(247, 247, 239, 0.96);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.22);
+  padding: 14px;
+}
+
+.info-kicker {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.info-panel h2 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.info-panel p {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.info-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.info-links a {
+  border: 2px solid var(--black);
+  background: var(--white);
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .mobile-visit-counter {
   display: none;
 }
@@ -1101,6 +1157,7 @@ p {
 
 .desktop.is-gravity-mode .menu-bar,
 .desktop.is-gravity-mode .screen > .mobile-home,
+.desktop.is-gravity-mode .screen > .info-panel,
 .desktop.is-gravity-mode .screen > .desktop-icons,
 .desktop.is-gravity-mode .screen > .window,
 .desktop.is-gravity-mode .screen > .dock,
@@ -1279,6 +1336,29 @@ body.konami .menu-bar {
     gap: 14px;
     width: min(100%, 440px);
     margin: 0 auto;
+  }
+
+  .info-panel {
+    position: static;
+    order: 2;
+    width: min(100%, 440px);
+    max-height: none;
+    margin: 0 auto 84px;
+    overflow: visible;
+    border-width: 2px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .info-panel h2 {
+    font-size: 17px;
+  }
+
+  .info-panel p {
+    font-size: 13px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
   }
 
   .mobile-hero {
@@ -1580,6 +1660,96 @@ body.konami .menu-bar {
     color: #fff;
   }
 
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .menu-bar,
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .screen > .mobile-home,
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .screen > .info-panel,
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .screen > .desktop-icons,
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .screen > .dock,
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .screen > .home-indicator,
+  .desktop.is-mobile-gravity-mode.is-gravity-mode .screen > .toast {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .desktop.is-mobile-gravity-mode .screen {
+    overflow: hidden;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icons {
+    position: fixed;
+    top: auto;
+    right: 12px;
+    bottom: 88px;
+    left: 12px;
+    z-index: 2500;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icons::before {
+    display: none;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icon {
+    min-width: 0;
+    animation: mobileIconFall 1.15s cubic-bezier(0.62, 0.02, 0.28, 1.16) forwards;
+    will-change: transform;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icon:nth-of-type(1) {
+    --gravity-mobile-start: -54vh;
+    --gravity-mobile-rotate: -7deg;
+    animation-delay: 0.02s;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icon:nth-of-type(2) {
+    --gravity-mobile-start: -61vh;
+    --gravity-mobile-rotate: 5deg;
+    animation-delay: 0.09s;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icon:nth-of-type(3) {
+    --gravity-mobile-start: -49vh;
+    --gravity-mobile-rotate: -4deg;
+    animation-delay: 0.16s;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icon:nth-of-type(4) {
+    --gravity-mobile-start: -58vh;
+    --gravity-mobile-rotate: 6deg;
+    animation-delay: 0.23s;
+  }
+
+  .desktop.is-mobile-gravity-mode .desktop-icon:nth-of-type(5) {
+    --gravity-mobile-start: -52vh;
+    --gravity-mobile-rotate: -5deg;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes mobileIconFall {
+    0% {
+      transform: translate3d(0, var(--gravity-mobile-start, -55vh), 0) rotate(0deg);
+    }
+
+    72% {
+      transform: translate3d(0, 10px, 0) rotate(var(--gravity-mobile-rotate, 4deg));
+    }
+
+    86% {
+      transform: translate3d(0, -7px, 0) rotate(0deg);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0) rotate(var(--gravity-mobile-rotate, 4deg));
+    }
+  }
+
   .window {
     position: fixed;
     left: 0 !important;
@@ -1700,7 +1870,7 @@ body.konami .menu-bar {
     height: 80px;
   }
 
-  h1 {
+  .profile-disk h2 {
     font-size: 20px;
   }
 

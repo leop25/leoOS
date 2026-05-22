@@ -29,8 +29,8 @@ let activeLanguage = "pt";
 const i18n = {
   pt: {
     lang: "pt-BR",
-    title: "Leonardo Penna de Lima - LeoOS",
-    description: "Site pessoal de Leonardo Penna de Lima em formato de desktop Macintosh clássico.",
+    title: "Leonardo Penna de Lima | AI Product Manager, LLM Evals & Agents",
+    description: "Portfolio de Leonardo Penna de Lima, Senior Product Manager especializado em produtos de IA, LLMs, agentes, avaliação de IA e sistemas em produção.",
     boot: "Iniciando LeoOS...",
     setup: {
       title: "Escolha o idioma",
@@ -80,6 +80,22 @@ const i18n = {
       terminalHint: "ajuda · interesses · abrir projetos",
       github: "GitHub",
       disks: "Discos",
+    },
+    seo: {
+      kicker: "AI Product Manager · LLM Evals · AI Agents",
+      title: "AI Product Manager criando produtos de IA generativa que sobrevivem à produção.",
+      summary:
+        "Leonardo Penna de Lima é Senior Product Manager em São Paulo focado em produtos de IA, aplicações com LLM e workflows agênticos. Seu trabalho conecta estratégia de produto com execução técnica: prototipação com Claude Code, Cursor, OpenAI API e GitHub; definição de PRDs e specs perto da engenharia; e transformação de demos em sistemas com qualidade mensurável.",
+      headings: ["AI Product Management", "LLM Evaluation", "AI Agents", "Projects", "Experience", "Public Proof"],
+      descriptions: [
+        "Experiência como product manager São Paulo em Mercado Livre, iFood, Revelo e Sinch/Wavy, com foco em produtos de IA generativa, discovery, experimentação, analytics e entrega cross-functional para sistemas em produção.",
+        "Trabalho prático com LLM evaluation, LLM-as-a-judge, AI observability, governança de IA responsável, guardrails, mitigação de alucinação e ciclos de qualidade human-in-the-loop.",
+        "Portfólio hands-on em AI agents, agentic workflows, RAG, tool e function calling, MCP, prompt engineering e context engineering para workflows nativos de IA.",
+        "Projetos públicos incluem leoOS, Cappy, no_shorts, ai-platform-qlearning, openai-telegram e LookMate, concierge de moda com IA lançado no Product Hunt.",
+        "Trajetória inclui produto de IA e pós-compra no Mercado Livre, atendimento com IA e crédito no iFood, recrutamento internacional na Revelo e mensageria enterprise na Sinch/Wavy.",
+        "Fontes públicas incluem LinkedIn, GitHub, Product Hunt, Medium, about.me e cobertura do Hackatrouble / Fila Digital, reforçando um histórico visível de produto, código e IA.",
+      ],
+      links: ["Leonardo Penna de Lima no LinkedIn", "leop25 no GitHub", "LookMate no Product Hunt"],
     },
     icons: ["Sobre", "Currículo", "Projetos", "Recortes", "Terminal"],
     about: {
@@ -134,7 +150,7 @@ const i18n = {
         "Bot em Python para gerar texto e imagens com OpenAI API via Telegram.",
         "Concierge de moda com IA lançado no Product Hunt, usando GPT-4 para sugestões de outfits.",
       ],
-      links: ["GitHub", "GitHub", "GitHub", "GitHub", "GitHub", "Product Hunt"],
+      links: ["leoOS no GitHub", "Cappy no GitHub", "no_shorts no GitHub", "ai-platform-qlearning no GitHub", "openai-telegram no GitHub", "LookMate no Product Hunt"],
       clipping: "Recorte",
       repos: "Repositórios",
     },
@@ -195,8 +211,8 @@ const i18n = {
   },
   en: {
     lang: "en",
-    title: "Leonardo Penna de Lima - LeoOS",
-    description: "Personal site for Leonardo Penna de Lima as a classic Macintosh desktop.",
+    title: "Leonardo Penna de Lima | AI Product Manager, LLM Evals & Agents",
+    description: "Portfolio of Leonardo Penna de Lima, Senior Product Manager specialized in AI products, LLMs, agents, AI evaluation, and production systems.",
     boot: "Starting LeoOS...",
     setup: {
       title: "Choose language",
@@ -247,6 +263,22 @@ const i18n = {
       github: "GitHub",
       disks: "Disks",
     },
+    seo: {
+      kicker: "AI Product Manager · LLM Evals · AI Agents",
+      title: "AI Product Manager building generative AI products that survive production.",
+      summary:
+        "Leonardo Penna de Lima is a Senior Product Manager in Sao Paulo focused on AI products, LLM applications and agentic workflows. His work connects product strategy with technical execution: prototyping with Claude Code, Cursor, OpenAI API and GitHub; defining PRDs and specs close to engineering; and turning demos into systems with measurable quality.",
+      headings: ["AI Product Management", "LLM Evaluation", "AI Agents", "Projects", "Experience", "Public Proof"],
+      descriptions: [
+        "Product manager Sao Paulo experience across Mercado Livre, iFood, Revelo and Sinch/Wavy, with focus on generative AI products, discovery, experimentation, analytics and cross-functional delivery for production systems.",
+        "Practical work with LLM evaluation, LLM-as-a-judge, AI observability, responsible AI governance, guardrails, hallucination mitigation and human-in-the-loop quality loops.",
+        "Hands-on portfolio around AI agents, agentic workflows, RAG, tool and function calling, MCP, prompt engineering and context engineering for AI-native workflows.",
+        "Public projects include leoOS, Cappy, no_shorts, ai-platform-qlearning, openai-telegram and LookMate, an AI fashion concierge launched on Product Hunt.",
+        "Career path includes AI and post-purchase product work at Mercado Livre, AI support and credit products at iFood, international recruiting at Revelo and enterprise messaging products at Sinch/Wavy.",
+        "Public sources include LinkedIn, GitHub, Product Hunt, Medium, about.me and press coverage of Hackatrouble / Fila Digital, reinforcing a visible trail of product, code and AI work.",
+      ],
+      links: ["Leonardo Penna de Lima on LinkedIn", "leop25 on GitHub", "LookMate on Product Hunt"],
+    },
     icons: ["About Leo", "Resume", "Projects", "Clippings", "Terminal"],
     about: {
       title: "About Leonardo",
@@ -294,7 +326,7 @@ const i18n = {
         "Python bot for generating text and images with the OpenAI API through Telegram.",
         "AI fashion concierge launched on Product Hunt, using GPT-4 for outfit suggestions.",
       ],
-      links: ["GitHub", "GitHub", "GitHub", "GitHub", "GitHub", "Product Hunt"],
+      links: ["leoOS on GitHub", "Cappy on GitHub", "no_shorts on GitHub", "ai-platform-qlearning on GitHub", "openai-telegram on GitHub", "LookMate on Product Hunt"],
       clipping: "Clipping",
       repos: "Repos",
     },
@@ -355,8 +387,8 @@ const i18n = {
   },
   es: {
     lang: "es",
-    title: "Leonardo Penna de Lima - LeoOS",
-    description: "Sitio personal de Leonardo Penna de Lima con formato de escritorio Macintosh clásico.",
+    title: "Leonardo Penna de Lima | AI Product Manager, LLM Evals & Agents",
+    description: "Portfolio de Leonardo Penna de Lima, Senior Product Manager especializado en productos de IA, LLMs, agentes, evaluación de IA y sistemas en producción.",
     boot: "Iniciando LeoOS...",
     setup: {
       title: "Elige el idioma",
@@ -407,6 +439,22 @@ const i18n = {
       github: "GitHub",
       disks: "Discos",
     },
+    seo: {
+      kicker: "AI Product Manager · LLM Evals · AI Agents",
+      title: "AI Product Manager creando productos de IA generativa que sobreviven en producción.",
+      summary:
+        "Leonardo Penna de Lima es Senior Product Manager en São Paulo enfocado en productos de IA, aplicaciones con LLM y workflows agénticos. Su trabajo conecta estrategia de producto con ejecución técnica: prototipado con Claude Code, Cursor, OpenAI API y GitHub; definición de PRDs y specs cerca de ingeniería; y transformación de demos en sistemas con calidad medible.",
+      headings: ["AI Product Management", "LLM Evaluation", "AI Agents", "Projects", "Experience", "Public Proof"],
+      descriptions: [
+        "Experiencia como product manager São Paulo en Mercado Livre, iFood, Revelo y Sinch/Wavy, con foco en productos de IA generativa, discovery, experimentación, analytics y entrega cross-functional para sistemas en producción.",
+        "Trabajo práctico con LLM evaluation, LLM-as-a-judge, AI observability, gobernanza responsable de IA, guardrails, mitigación de alucinaciones y ciclos de calidad human-in-the-loop.",
+        "Portafolio hands-on sobre AI agents, agentic workflows, RAG, tool y function calling, MCP, prompt engineering y context engineering para workflows nativos de IA.",
+        "Proyectos públicos incluyen leoOS, Cappy, no_shorts, ai-platform-qlearning, openai-telegram y LookMate, concierge de moda con IA lanzado en Product Hunt.",
+        "Trayectoria incluye producto de IA y post-compra en Mercado Livre, soporte con IA y crédito en iFood, reclutamiento internacional en Revelo y mensajería enterprise en Sinch/Wavy.",
+        "Fuentes públicas incluyen LinkedIn, GitHub, Product Hunt, Medium, about.me y cobertura de Hackatrouble / Fila Digital, reforzando un historial visible de producto, código e IA.",
+      ],
+      links: ["Leonardo Penna de Lima en LinkedIn", "leop25 en GitHub", "LookMate en Product Hunt"],
+    },
     icons: ["Acerca de", "CV", "Proyectos", "Recortes", "Terminal"],
     about: {
       title: "Acerca de Leonardo",
@@ -454,7 +502,7 @@ const i18n = {
         "Bot en Python para generar texto e imágenes con OpenAI API vía Telegram.",
         "Concierge de moda con IA lanzado en Product Hunt, usando GPT-4 para sugerencias de outfits.",
       ],
-      links: ["GitHub", "GitHub", "GitHub", "GitHub", "GitHub", "Product Hunt"],
+      links: ["leoOS en GitHub", "Cappy en GitHub", "no_shorts en GitHub", "ai-platform-qlearning en GitHub", "openai-telegram en GitHub", "LookMate en Product Hunt"],
       clipping: "Recorte",
       repos: "Repositorios",
     },
@@ -541,7 +589,19 @@ document.querySelectorAll("[data-open]").forEach((control) => {
 });
 
 languageButtons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.language, true));
+  button.addEventListener("click", () => {
+    trackEvent("language_select", { language: button.dataset.language });
+    setLanguage(button.dataset.language, true);
+  });
+});
+
+document.querySelectorAll("[data-track]").forEach((node) => {
+  node.addEventListener("click", () => {
+    trackEvent(node.dataset.track, {
+      label: node.dataset.trackLabel || node.textContent.trim(),
+      href: node.href || "",
+    });
+  });
 });
 
 initLanguage();
@@ -654,7 +714,11 @@ function applyLanguage(language) {
   activeLanguage = language;
   document.documentElement.lang = copy.lang;
   document.title = copy.title;
-  document.querySelector("meta[name='description']")?.setAttribute("content", copy.description);
+  setMeta("meta[name='description']", "content", copy.description);
+  setMeta("meta[property='og:title']", "content", copy.title);
+  setMeta("meta[property='og:description']", "content", copy.description);
+  setMeta("meta[name='twitter:title']", "content", copy.title);
+  setMeta("meta[name='twitter:description']", "content", copy.description);
 
   setText(".boot-card p", copy.boot);
   setText("#language-title", copy.setup.title);
@@ -704,6 +768,13 @@ function applyLanguage(language) {
   setText(".mobile-pocket-files a strong", "@leop25");
   document.querySelector(".desktop-icons")?.style.setProperty("--desktop-icons-label", JSON.stringify(copy.mobile.disks));
   setTextList(".desktop-icon span:last-child", copy.icons);
+
+  setText(".info-kicker", copy.seo.kicker);
+  setText("#info-panel-title", copy.seo.title);
+  setText(".info-summary", copy.seo.summary);
+  setTextList(".info-grid h2", copy.seo.headings);
+  setTextList(".info-grid p", copy.seo.descriptions);
+  setTextList(".info-links a", copy.seo.links);
 
   setText("#window-about .title-bar strong", copy.about.title);
   setText(".profile-role", copy.about.role);
@@ -769,6 +840,11 @@ function setText(selector, value, options = {}) {
     return;
   }
   node.textContent = value;
+}
+
+function setMeta(selector, attribute, value) {
+  const node = document.querySelector(selector);
+  if (node && value) node.setAttribute(attribute, value);
 }
 
 function setTextWithin(root, selector, value) {
@@ -1101,6 +1177,10 @@ function runCommand(raw) {
   const command = normalizeCommand(rawCommand);
   const responses = i18n[activeLanguage].terminal;
 
+  if (["resume", "projects", "contact"].includes(command)) {
+    trackEvent("terminal_command", { command });
+  }
+
   if (command === "clear") {
     terminalOutput.innerHTML = "";
     return;
@@ -1108,6 +1188,9 @@ function runCommand(raw) {
 
   if (command === "open") {
     const target = normalizeWindowTarget(args[0]);
+    if (["resume", "projects"].includes(target)) {
+      trackEvent("terminal_command", { command: `open ${target}` });
+    }
     if (windows.has(target)) {
       openWindow(target);
       writeTerminal(responses.opened(target));
@@ -1129,14 +1212,18 @@ function runCommand(raw) {
   }
 
   if (command === "7773") {
-    desktop.classList.remove("is-gravity-mode");
-    void desktop.offsetWidth;
-    desktop.classList.add("is-gravity-mode");
+    triggerGravityMode();
     writeTerminal(responses[command]);
     return;
   }
 
   writeTerminal(responses[command] || responses.commandNotFound(raw));
+}
+
+function trackEvent(name, data = {}) {
+  if (typeof window.va === "function") {
+    window.va("event", { name, data });
+  }
 }
 
 function normalizeCommand(command) {
@@ -1160,6 +1247,27 @@ function normalizeCommand(command) {
     borrar: "clear",
   };
   return aliases[command] || command;
+}
+
+function triggerGravityMode() {
+  const isMobile = window.matchMedia("(max-width: 900px)").matches;
+  desktop.classList.remove("is-gravity-mode", "is-mobile-gravity-mode");
+
+  if (isMobile) {
+    windows.forEach((win) => (win.hidden = true));
+    const screen = document.querySelector(".screen");
+    if (screen) {
+      screen.scrollTop = 0;
+      screen.scrollTo({ top: 0, behavior: "auto" });
+    }
+    desktop.classList.add("is-mobile-gravity-mode");
+    void desktop.offsetWidth;
+    desktop.classList.add("is-gravity-mode");
+    return;
+  }
+
+  void desktop.offsetWidth;
+  desktop.classList.add("is-gravity-mode");
 }
 
 function normalizeWindowTarget(target = "") {
